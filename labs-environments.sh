@@ -1,4 +1,6 @@
 #!/bin/bash
+# to generate 15 containers ./labs-environments.sh 15
+# to delete 15 containers ./labs-environments.sh 15 del
 END=$1
 for ((i=1;i<=END;i++)); do
     mgmtssh=$((3000 + $i))
