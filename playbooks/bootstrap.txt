@@ -1,0 +1,1 @@
+ansible-playbook -i local_inventory ssh-copy-id.yml  --ask-pass

@@ -1,0 +1,9 @@
+[test]
+host1 ansible_host=192.168.50.1 ansible_port=4001
+host2 ansible_host=192.168.50.1 ansible_port=3001
+host3 ansible_host=192.168.50.1 ansible_port=4002
+host4 ansible_host=192.168.50.1 ansible_port=3002
+
+[test:vars]
+ansible_user=root
+ansible_python_interpreter=/usr/bin/python3
