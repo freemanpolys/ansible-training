@@ -1,10 +1,10 @@
 #!/bin/bash
 END=$1
 for ((i=1;i<=END;i++)); do
-    mgmtssh="300$i"
-    sshport="400$i"
-    httport="500$i"
-    mysqlport="600$i"
+    mgmtssh=$((3000 + $i))
+    sshport=$((4000 + $i))
+    httport=$((5000 + $i))
+    mysqlport=$((6000 + $i))
     mgmt="mgmt-ansible$i"
     remote="ansible$i"
 
