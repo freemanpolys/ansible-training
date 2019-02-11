@@ -5,9 +5,10 @@
     ping:
   - name: Create /tmp/sonatel.txt file on test remote nodes
     file:
-      path: /tmp/sonatel2.txt
+      path: /tmp/sonatel.txt
       state:  touch
-  - name: Create /tmp/sonatel.txt file on test remote nodes
-    command: ls  /tmp
+  - name: Listing /tmp folder on remote nodes
+    command: ls  /tmp/
     register: output
-  - debug: var=output.stdout_lines
+  - name: Print the output of the listing task 
+    debug: var=output.stdout_lines  
