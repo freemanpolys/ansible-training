@@ -1,0 +1,9 @@
+[coe-tools]
+10.137.18.49 ansible_user=kokou028666
+
+[test]
+automation.orange-sonatel.com
+10.137.18.136 
+
+[test:vars]
+ansible_user=kokou028666

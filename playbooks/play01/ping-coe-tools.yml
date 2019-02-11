@@ -1,0 +1,5 @@
+---
+- hosts: coe-tools
+  tasks:
+  - name: Ping remote nodes in coe-tools group
+    ping:

@@ -1,0 +1,13 @@
+---
+- hosts: test
+  tasks:
+  - name: Ping remote hosts
+    ping:
+  - name: Create /tmp/sonatel.txt file on test remote nodes
+    file:
+      path: /tmp/sonatel2.txt
+      state:  touch
+  - name: Create /tmp/sonatel.txt file on test remote nodes
+    command: ls  /tmp
+    register: output
+  - debug: var=output.stdout_lines
